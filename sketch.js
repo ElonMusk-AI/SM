@@ -77,17 +77,17 @@ function keyPressed() {
 	 Body.setStatic(packageBody,false);
 
   }
-}
-function keyPressed2() {
 if (keyCode === LEFT_ARROW) {
-	helicopterSprite.position.x = helicopterSprite.position.x-2;
-}
-}
+	helicopterSprite.x = helicopterSprite.x - 10;
+	translation = {x:-20, y:0}
+	Matter.Body.translate(packageBody, translation)
 
-function keyPressed3() {
-	if (keyCode === RIGHT_ARROW) {
-		helicopterSprite.position.x = helicopterSprite.position.x+2;
-	}
+  }
+if (keyCode === RIGHT_ARROW) {
+	 helicopterSprite.x = helicopterSprite.x + 10;
+	translation = {x:20, y:0}
+	Matter.Body.translate(packageBody, translation)
 
+  }
 }
 
