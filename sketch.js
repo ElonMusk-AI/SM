@@ -65,9 +65,6 @@ function draw() {
 
 
 
-  keyPressed2();
-  keyPressed3();
-
   drawSprites();
  
 }
